@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <input type="text" class="form-control" [(ngModel)]="twitchQuery">
+      <br>
+      <button class="btn btn-primary btn-lg btn-block" (click)="onSearchForChannel()">Search For Channel</button>
+      <br>
+      <h1>Twitch Channels</h1>
+      <hr>
+      <ul class="list-group">
+        <li
+            class="list-group-item list-group-item-info"
+            *ngFor="let channel of getChannel()"
+            (click)="onClickChannel(channel)">
+            <img src="{{ channel.logo ? channel.logo : 'https://static-cdn.jtvnw.net/ttv-static/404_boxart-136x190.jpg' }}" alt="Life is good" height="80" width="80" class="img-rounded">
+            <strong class="text-center">{{ channel.display_name }}</strong>
+            <span
+                class="badge">
+                Followers: {{ channel.followers }}
+            </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

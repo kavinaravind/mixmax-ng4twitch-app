@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <input type="text" class="form-control" [(ngModel)]="twitchQuery">
+      <br>
+      <button class="btn btn-primary btn-lg btn-block" (click)="onSearchForStream()">Search For Stream</button>
+      <br>
+      <h1>Twitch Streams</h1>
+      <hr>
+      <ul class="list-group">
+        <li
+            class="list-group-item list-group-item-info"
+            *ngFor="let stream of getStream()"
+            (click)="onClickStream(stream)">
+            <img src="{{ stream.preview.medium }}" alt="Smiley face" height="80" width="80" class="img-rounded">
+            <strong class="text-center">{{ stream.channel.display_name }} | {{ stream.channel.status | shorten:30}} </strong>
+            <span
+                class="badge">
+                Viewers: {{ stream.viewers }}
+            </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <input type="text" class="form-control" [(ngModel)]="twitchQuery">
+      <br>
+      <button class="btn btn-primary btn-lg btn-block" (click)="onSearchForGame()">Search For Game</button>
+      <br>
+      <h1>Twitch Games</h1>
+      <hr>
+      <ul class="list-group">
+        <li
+            class="list-group-item list-group-item-info"
+            *ngFor="let game of getGames()"
+            (click)="onClickGame(game)">
+            <img src="{{ game.box.medium }}" alt="Smiley face" height="80" width="80" class="img-rounded">
+            <strong class="text-center">{{ game.name }}</strong>
+            <span
+                class="badge">
+                Popularity: {{ game.popularity }}
+            </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
