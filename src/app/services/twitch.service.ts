@@ -17,7 +17,7 @@ export class TwitchService {
     constructor(private http: Http) { }
 
     getTopGames() {
-        this.http.get('https://localhost:3000/twitch/gettopgames')
+        this.http.get('https://mixmax-twitch-app.mybluemix.net/twitch/gettopgames')
             .map(
                 (response: Response) => {
                     const games: Game[] = response.json();
@@ -33,7 +33,7 @@ export class TwitchService {
     }
 
     searchForGames(query: string) {
-        this.http.get('https://localhost:3000/twitch/searchforgames/' + query)
+        this.http.get('https://mixmax-twitch-app.mybluemix.net/twitch/searchforgames/' + query)
             .map(
                 (response: Response) => {
                     const games: Game[] = response.json();
@@ -49,7 +49,7 @@ export class TwitchService {
     }
 
     searchForChannels(query: string) {
-        this.http.get('https://localhost:3000/twitch/searchforchannels/' + query)
+        this.http.get('https://mixmax-twitch-app.mybluemix.net/twitch/searchforchannels/' + query)
             .map(
                 (response: Response) => {
                     const channels: Channel[] = response.json();
@@ -65,7 +65,7 @@ export class TwitchService {
     }
 
     searchForStreams(query: string) {
-        this.http.get('https://localhost:3000/twitch/searchforstreams/' + query)
+        this.http.get('https://mixmax-twitch-app.mybluemix.net/twitch/searchforstreams/' + query)
             .map(
                 (response: Response) => {
                     const streams: Stream[] = response.json();
