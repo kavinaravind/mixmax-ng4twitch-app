@@ -20,10 +20,10 @@ run `npm run-script build:prod` for webpack build for production!
 
 Please see mixmax-twitch-enhancement repository for node.js back-end service using twitch api and src/app/services/twitch-service.ts. Slight modification would be needed for functionality.
 
-<kbd>![alt text](https://raw.githubusercontent.com/kavinaravind/mixmax-ng4twitch-app/master/twitchtopgames.png)</kbd>
+<kbd>![alt text](https://raw.githubusercontent.com/kavinaravind/mixmax-ng4twitch-app/master/img/twitchtopgames.png)</kbd>
 
-<kbd>![alt text](https://raw.githubusercontent.com/kavinaravind/mixmax-ng4twitch-app/master/twitchgames.png)</kbd>
+<kbd>![alt text](https://raw.githubusercontent.com/kavinaravind/mixmax-ng4twitch-app/master/img/twitchgames.png)</kbd>
 
-<kbd>![alt text](https://raw.githubusercontent.com/kavinaravind/mixmax-ng4twitch-app/master/twitchchannels.png)</kbd>
+<kbd>![alt text](https://raw.githubusercontent.com/kavinaravind/mixmax-ng4twitch-app/master/img/twitchchannels.png)</kbd>
 
-<kbd>![alt text](https://raw.githubusercontent.com/kavinaravind/mixmax-ng4twitch-app/master/twitchstreams.png)</kbd>
+<kbd>![alt text](https://raw.githubusercontent.com/kavinaravind/mixmax-ng4twitch-app/master/img/twitchstreams.png)</kbd>
