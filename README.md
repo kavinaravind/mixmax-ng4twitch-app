@@ -1,4 +1,4 @@
-# mixmax-ng4twitch-app
+# ng4twitch-app
 
 1. https://angular.io/
 2. http://getbootstrap.com/
@@ -9,7 +9,7 @@ Building a twitch front-end using Angular4
 
 ### Installing
 
-1. clone https://github.com/kavinaravind/mixmax-ng4twitch-app.git
+1. clone https://github.com/kavinaravind/ng4twitch-app.git
 2. `npm install`
 3. `npm run-script build`
 4. navigate to http://localhost:8080/ :)
